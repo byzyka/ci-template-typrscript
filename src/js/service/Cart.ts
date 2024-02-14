@@ -1,13 +1,14 @@
 import Buyable from '../domain/Buyable';
 
-let totalPrice: number = 0;
-let totalDiscount: number = 0;
-let resalt: Buyable[] = [];
+export let totalPrice: number = 0;
+export let totalDiscount: number = 0;
+export let result: Buyable[] = [];
+
 
 export default class Cart {
     private _items: Buyable[] = [];
 
-    add(item: Buyable): void {
+   add(item: Buyable): void {
         this._items.push(item);
     }
 
@@ -15,8 +16,8 @@ export default class Cart {
         return [...this._items];
     }
 
+   
     totalSum([]): void {
-
         this._items.forEach(el => {
             totalPrice += el.price;
         })
@@ -37,11 +38,11 @@ export default class Cart {
     }
 
     deleteId(id: number): void {
-        resalt = this._items.filter(el => el.id !== id)
+        result = this._items.filter(el => el.id !== id)
     }
 
     get idDel(): Buyable[] {
-        return resalt;
+        return result;
     }
 
 }
