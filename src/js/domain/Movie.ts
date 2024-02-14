@@ -15,13 +15,4 @@ export default class Movie implements Buyable {
 ) { }
 }
 
-/*export class Movie:  Movie = {
-    name: "Мстители",
-    originalName: "The Avengers",
-    year: 2012,
-    country: "США",
-    tagline: "Avengers Assemble!",
-    genre: "фантастика, боевик, фэнтези, приключения",
-    time: 137,
-}*/
 

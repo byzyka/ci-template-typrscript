@@ -5,7 +5,7 @@ import Movie from './domain/Movie';
 
 const cart = new Cart();
 
-console.log(typeof cart.items.length)
+console.log(cart.items.length)
 
 cart.add(new Book(1001, 'War and Piece', 'Leo Tolstoy', 2000, 1225));
 cart.add(new MusicAlbum(1008, 'Meteora', 'Linkin Park', 900));
@@ -17,4 +17,4 @@ cart.totalSum(cart.items);
 cart.calcDiscount(50);
 cart.deleteId(1008);
 
-//console.log(typeof(cart.items.length))
+
