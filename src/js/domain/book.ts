@@ -20,3 +20,4 @@ export default class Book implements Buyable {
         readonly pages: number,
     ) { }
 }
+
